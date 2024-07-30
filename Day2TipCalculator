@@ -6,8 +6,8 @@
 
 total_bill=int(input("Enter Total bill - "))
 number_of_people=int(input("Enter the number of people - "))
-tips=float(input("Enter the tip amount - "))
-bill_for_each=total_bill/number_of_people*tips
+tips=int(input("Enter the tip amount - "))
+bill_for_each=(total_bill+(total_bill/100*tips))/number_of_people
 bill_for_each_format_to_2_decimal='%.2f' % bill_for_each
 print(bill_for_each_format_to_2_decimal)
 
