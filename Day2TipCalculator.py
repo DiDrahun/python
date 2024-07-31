@@ -5,11 +5,20 @@
 #Write your code below this line :point_down:
 
 total_bill=int(input("Enter Total bill - "))
-number_of_people=int(input("Enter the number of people - "))
-tips=int(input("Enter the tip amount - "))
-bill_for_each=(total_bill+(total_bill/100*tips))/number_of_people
-bill_for_each_format_to_2_decimal='%.2f' % bill_for_each
-print(bill_for_each_format_to_2_decimal)
+if total_bill < 0:
+    print("Total bill cannot be less than 0")
+    quit()
 
+number_of_people=int(input("Enter the number of people - "))
+if number_of_people <= 0:
+    print("Number of people cannot be less or equal to 0")
+    quit()
+
+tips=int(input("Enter the tip amount - "))
+if tips < 0:
+    print("Tips cannot be less than 0")
+    quit()
+
+bill_for_each=(total_bill+(total_bill/100*tips))/number_of_people
 formatted_bill_for_each=f'{bill_for_each:.2f}'
-print(formatted_bill_for_each)
+print(formatted_bill_for_each) 
