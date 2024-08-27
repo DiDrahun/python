@@ -7,7 +7,6 @@ else:
     print("Tails")
 
 #2
-import random
 test_random_float_function=random.uniform(0, 2)
 print(test_random_float_function)
 if test_random_float_function>=1:
