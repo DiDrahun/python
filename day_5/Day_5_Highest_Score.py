@@ -1,4 +1,5 @@
 list_of_numbers = [1,2,3,4,5,6,7]
+
 sum_of_numbers = 0
 for number in list_of_numbers:
     sum_of_numbers = sum_of_numbers + number
